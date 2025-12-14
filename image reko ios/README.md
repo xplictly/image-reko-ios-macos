@@ -7,7 +7,3 @@ Discover the power of intuitive image searching wrapped in a sleek, elegant desi
 
 ---
 
-## 📸 Screenshots
-
-_Add your screenshots here to showcase the app's interface and features._
-
