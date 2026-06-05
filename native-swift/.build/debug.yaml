@@ -1,0 +1,81 @@
+client:
+  name: basic
+  file-system: device-agnostic
+tools: {}
+targets:
+  "PackageStructure": ["<PackageStructure>"]
+  "WidgetWallSwift-arm64-apple-macosx26.0-debug.exe": ["<WidgetWallSwift-arm64-apple-macosx26.0-debug.exe>"]
+  "WidgetWallSwift-arm64-apple-macosx26.0-debug.module": ["<WidgetWallSwift-arm64-apple-macosx26.0-debug.module>"]
+  "main": ["<WidgetWallSwift-arm64-apple-macosx26.0-debug.exe>","<WidgetWallSwift-arm64-apple-macosx26.0-debug.module>"]
+  "test": ["<WidgetWallSwift-arm64-apple-macosx26.0-debug.exe>","<WidgetWallSwift-arm64-apple-macosx26.0-debug.module>"]
+default: "main"
+nodes:
+  "/Users/maanas/Project Files/widgetwall/native-swift/Sources/WidgetWallSwift/":
+    is-directory-structure: true
+    content-exclusion-patterns: [".git",".build"]
+  "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift":
+    is-mutated: true
+commands:
+  "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift-entitlement.plist":
+    tool: write-auxiliary-file
+    inputs: ["<entitlement-plist>","<com.apple.security.get-task-allow>"]
+    outputs: ["/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift-entitlement.plist"]
+    description: "Write auxiliary file /Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift-entitlement.plist"
+
+  "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/sources":
+    tool: write-auxiliary-file
+    inputs: ["<sources-file-list>","/Users/maanas/Project Files/widgetwall/native-swift/Sources/WidgetWallSwift/main.swift"]
+    outputs: ["/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/sources"]
+    description: "Write auxiliary file /Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/sources"
+
+  "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.product/Objects.LinkFileList":
+    tool: write-auxiliary-file
+    inputs: ["<link-file-list>","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/main.swift.o"]
+    outputs: ["/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.product/Objects.LinkFileList"]
+    description: "Write auxiliary file /Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.product/Objects.LinkFileList"
+
+  "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt":
+    tool: write-auxiliary-file
+    inputs: ["<swift-get-version>","/Library/Developer/CommandLineTools/usr/bin/swiftc"]
+    outputs: ["/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"]
+    always-out-of-date: "true"
+    description: "Write auxiliary file /Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+
+  "<WidgetWallSwift-arm64-apple-macosx26.0-debug.exe>":
+    tool: phony
+    inputs: ["<WidgetWallSwift-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    outputs: ["<WidgetWallSwift-arm64-apple-macosx26.0-debug.exe>"]
+
+  "<WidgetWallSwift-arm64-apple-macosx26.0-debug.module>":
+    tool: phony
+    inputs: ["/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/main.swift.o","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/Modules/WidgetWallSwift.swiftmodule"]
+    outputs: ["<WidgetWallSwift-arm64-apple-macosx26.0-debug.module>"]
+
+  "C.WidgetWallSwift-arm64-apple-macosx26.0-debug.exe":
+    tool: shell
+    inputs: ["/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/main.swift.o","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.product/Objects.LinkFileList"]
+    outputs: ["/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift"]
+    description: "Linking ./.build/arm64-apple-macosx/debug/WidgetWallSwift"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-L","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug","-o","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift","-module-name","WidgetWallSwift","-Xlinker","-no_warn_duplicate_libraries","-emit-executable","-Xlinker","-alias","-Xlinker","_WidgetWallSwift_main","-Xlinker","_main","-Xlinker","-rpath","-Xlinker","@loader_path","@/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.product/Objects.LinkFileList","-Xlinker","-rpath","-Xlinker","/Library/Developer/CommandLineTools/usr/lib/swift-6.2/macosx","-target","arm64-apple-macosx14.0","-Xlinker","-add_ast_path","-Xlinker","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/Modules/WidgetWallSwift.swiftmodule","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g"]
+
+  "C.WidgetWallSwift-arm64-apple-macosx26.0-debug.exe-entitlements":
+    tool: shell
+    inputs: ["/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift-entitlement.plist"]
+    outputs: ["<WidgetWallSwift-arm64-apple-macosx26.0-debug.exe-CodeSigning>"]
+    description: "Applying debug entitlements to ./.build/arm64-apple-macosx/debug/WidgetWallSwift"
+    args: ["codesign","--force","--sign","-","--entitlements","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift-entitlement.plist","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift"]
+
+  "C.WidgetWallSwift-arm64-apple-macosx26.0-debug.module":
+    tool: shell
+    inputs: ["/Users/maanas/Project Files/widgetwall/native-swift/Sources/WidgetWallSwift/main.swift","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/sources"]
+    outputs: ["/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/main.swift.o","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/Modules/WidgetWallSwift.swiftmodule"]
+    description: "Compiling Swift Module 'WidgetWallSwift' (1 sources)"
+    args: ["/Library/Developer/CommandLineTools/usr/bin/swiftc","-module-name","WidgetWallSwift","-emit-dependencies","-emit-module","-emit-module-path","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/Modules/WidgetWallSwift.swiftmodule","-output-file-map","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/output-file-map.json","-incremental","-c","@/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/sources","-I","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/Modules","-target","arm64-apple-macosx14.0","-incremental","-enable-batch-mode","-serialize-diagnostics","-index-store-path","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/index/store","-Onone","-enable-testing","-j10","-DSWIFT_PACKAGE","-DDEBUG","-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE","-module-cache-path","/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/ModuleCache","-parseable-output","-Xfrontend","-entry-point-function-name","-Xfrontend","WidgetWallSwift_main","-swift-version","5","-I","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-L","/Library/Developer/CommandLineTools/Library/Developer/Frameworks","-plugin-path","/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing","-sdk","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-g","-Xcc","-isysroot","-Xcc","/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk","-Xcc","-fPIC","-Xcc","-g","-package-name","native_swift"]
+
+  "PackageStructure":
+    tool: package-structure-tool
+    inputs: ["/Users/maanas/Project Files/widgetwall/native-swift/Sources/WidgetWallSwift/","/Users/maanas/Project Files/widgetwall/native-swift/Package.swift","/Users/maanas/Project Files/widgetwall/native-swift/Package.resolved"]
+    outputs: ["<PackageStructure>"]
+    description: "Planning build"
+    allow-missing-inputs: true
+

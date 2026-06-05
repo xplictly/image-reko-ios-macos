@@ -1,0 +1,43 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/release/WidgetWallSwift'
+relocations:
+  - { offset: 0xF1B4C, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift8delegateAA11AppDelegateCvp', symObjAddr: 0x11A48, symBinAddr: 0x10000CEB0, symSize: 0x0 }
+  - { offset: 0xF1CE1, size: 0x8, addend: 0x0, symName: _WidgetWallSwift_main, symObjAddr: 0x0, symBinAddr: 0x100001238, symSize: 0xE0 }
+  - { offset: 0xF1D16, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift11AppDelegateCMa', symObjAddr: 0xE0, symBinAddr: 0x100001318, symSize: 0x20 }
+  - { offset: 0xF2086, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift17ViewfinderHUDViewCfETo', symObjAddr: 0x1CC0, symBinAddr: 0x100002EF8, symSize: 0xA8 }
+  - { offset: 0xF20B5, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift17ViewfinderHUDViewCMa', symObjAddr: 0x1D68, symBinAddr: 0x100002FA0, symSize: 0x20 }
+  - { offset: 0xF20EA, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift11AppDelegateCfETo', symObjAddr: 0x2F08, symBinAddr: 0x100004140, symSize: 0x48 }
+  - { offset: 0xF2124, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4findys10_HashTableV6BucketV6bucket_Sb5foundtxSHRzlFSS_Tg5', symObjAddr: 0x2F50, symBinAddr: 0x100004188, symSize: 0x64 }
+  - { offset: 0xF2151, size: 0x8, addend: 0x0, symName: '_$sypWOc', symObjAddr: 0x2FB4, symBinAddr: 0x1000041EC, symSize: 0x3C }
+  - { offset: 0xF2170, size: 0x8, addend: 0x0, symName: '_$ss22__RawDictionaryStorageC4find_9hashValues10_HashTableV6BucketV6bucket_Sb5foundtx_SitSHRzlFSS_Tg5', symObjAddr: 0x2FF0, symBinAddr: 0x100004228, symSize: 0xB4 }
+  - { offset: 0xF21C7, size: 0x8, addend: 0x0, symName: '_$sSo17OS_dispatch_queueCMa', symObjAddr: 0x30A4, symBinAddr: 0x1000042DC, symSize: 0x44 }
+  - { offset: 0xF21DB, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift11AppDelegateC29applicationDidFinishLaunchingyy10Foundation12NotificationVFyyYbcfU_TA', symObjAddr: 0x310C, symBinAddr: 0x100004344, symSize: 0x8 }
+  - { offset: 0xF21EF, size: 0x8, addend: 0x0, symName: _block_copy_helper, symObjAddr: 0x3114, symBinAddr: 0x10000434C, symSize: 0x10 }
+  - { offset: 0xF2203, size: 0x8, addend: 0x0, symName: _block_destroy_helper, symObjAddr: 0x3124, symBinAddr: 0x10000435C, symSize: 0x8 }
+  - { offset: 0xF2217, size: 0x8, addend: 0x0, symName: '_$s8Dispatch0A13WorkItemFlagsVACs10SetAlgebraAAWl', symObjAddr: 0x312C, symBinAddr: 0x100004364, symSize: 0x44 }
+  - { offset: 0xF222B, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledNameV2, symObjAddr: 0x3170, symBinAddr: 0x1000043A8, symSize: 0x44 }
+  - { offset: 0xF223F, size: 0x8, addend: 0x0, symName: '_$sSay8Dispatch0A13WorkItemFlagsVGSayxGSTsWl', symObjAddr: 0x31B4, symBinAddr: 0x1000043EC, symSize: 0x50 }
+  - { offset: 0xF2253, size: 0x8, addend: 0x0, symName: ___swift_instantiateConcreteTypeFromMangledNameAbstractV2, symObjAddr: 0x3204, symBinAddr: 0x10000443C, symSize: 0x44 }
+  - { offset: 0xF2267, size: 0x8, addend: 0x0, symName: '_$sS2SSysWl', symObjAddr: 0x3248, symBinAddr: 0x100004480, symSize: 0x40 }
+  - { offset: 0xF227B, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataVSgWOe', symObjAddr: 0x3288, symBinAddr: 0x1000044C0, symSize: 0x14 }
+  - { offset: 0xF228F, size: 0x8, addend: 0x0, symName: '_$s10Foundation4DataV15_RepresentationOWOe', symObjAddr: 0x329C, symBinAddr: 0x1000044D4, symSize: 0x40 }
+  - { offset: 0xF22A3, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift11AppDelegateC17readStandardInputyyFyyScMYccfU_TA', symObjAddr: 0x3308, symBinAddr: 0x100004540, symSize: 0x24 }
+  - { offset: 0xF2663, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift17ViewfinderHUDViewC5frameACSo6CGRectV_tcfc', symObjAddr: 0x100, symBinAddr: 0x100001338, symSize: 0x220 }
+  - { offset: 0xF2805, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift17ViewfinderHUDViewC5frameACSo6CGRectV_tcfcTo', symObjAddr: 0x320, symBinAddr: 0x100001558, symSize: 0x20 }
+  - { offset: 0xF296E, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift17ViewfinderHUDViewC5coderACSgSo7NSCoderC_tcfcTo', symObjAddr: 0x340, symBinAddr: 0x100001578, symSize: 0x28 }
+  - { offset: 0xF29EF, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift17ViewfinderHUDViewC9setupGridyyF', symObjAddr: 0x368, symBinAddr: 0x1000015A0, symSize: 0x2A4 }
+  - { offset: 0xF2BE8, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift17ViewfinderHUDViewC13setupBracketsyyF', symObjAddr: 0x60C, symBinAddr: 0x100001844, symSize: 0x364 }
+  - { offset: 0xF2E10, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift17ViewfinderHUDViewC14setupCrosshairyyF', symObjAddr: 0x970, symBinAddr: 0x100001BA8, symSize: 0x298 }
+  - { offset: 0xF3133, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift17ViewfinderHUDViewC11setupLabelsyyF', symObjAddr: 0xC08, symBinAddr: 0x100001E40, symSize: 0xC00 }
+  - { offset: 0xF3732, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift17ViewfinderHUDViewC11updateStatsyyF', symObjAddr: 0x1808, symBinAddr: 0x100002A40, symSize: 0x4AC }
+  - { offset: 0xF3C71, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift11AppDelegateC29applicationDidFinishLaunchingyy10Foundation12NotificationVF', symObjAddr: 0x1D88, symBinAddr: 0x100002FC0, symSize: 0x7EC }
+  - { offset: 0xF3F62, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift11AppDelegateC29applicationDidFinishLaunchingyy10Foundation12NotificationVFyyYbcfU_', symObjAddr: 0x2574, symBinAddr: 0x1000037AC, symSize: 0x40C }
+  - { offset: 0xF405F, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift11AppDelegateC29applicationDidFinishLaunchingyy10Foundation12NotificationVFTo', symObjAddr: 0x2980, symBinAddr: 0x100003BB8, symSize: 0xA0 }
+  - { offset: 0xF40F4, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift11AppDelegateC16handleIPCMessageyySDySSypGF', symObjAddr: 0x2A50, symBinAddr: 0x100003C88, symSize: 0x3F8 }
+  - { offset: 0xF4408, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift11AppDelegateC04showA0yyFTo', symObjAddr: 0x2E48, symBinAddr: 0x100004080, symSize: 0x24 }
+  - { offset: 0xF4420, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift11AppDelegateC04showA0yyFTo', symObjAddr: 0x2E48, symBinAddr: 0x100004080, symSize: 0x24 }
+  - { offset: 0xF4440, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift11AppDelegateC04showA0yyFTo', symObjAddr: 0x2E48, symBinAddr: 0x100004080, symSize: 0x24 }
+  - { offset: 0xF4488, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift11AppDelegateCACycfcTo', symObjAddr: 0x2E6C, symBinAddr: 0x1000040A4, symSize: 0x60 }
+  - { offset: 0xF44DD, size: 0x8, addend: 0x0, symName: '_$s15WidgetWallSwift17ViewfinderHUDViewC5coderACSgSo7NSCoderC_tcfcTf4dn_n', symObjAddr: 0x332C, symBinAddr: 0x100004564, symSize: 0x1A4 }
+...

@@ -1,0 +1,13 @@
+{
+  "": {
+    "dependencies": "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/release/WidgetWallSwift.build/WidgetWallSwift.d",
+    "object": "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/release/WidgetWallSwift.build/WidgetWallSwift.o",
+    "swift-dependencies": "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/release/WidgetWallSwift.build/master.swiftdeps"
+  },
+  "/Users/maanas/Project Files/widgetwall/native-swift/Sources/WidgetWallSwift/main.swift": {
+    "object": "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/release/WidgetWallSwift.build/main.swift.o",
+    "swiftmodule": "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/release/WidgetWallSwift.build/main~partial.swiftmodule",
+    "swift-dependencies": "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/release/WidgetWallSwift.build/main.swiftdeps",
+    "diagnostics": "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/release/WidgetWallSwift.build/main.dia"
+  }
+}

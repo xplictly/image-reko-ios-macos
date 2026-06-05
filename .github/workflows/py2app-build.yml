@@ -1,0 +1,53 @@
+name: Build macOS .app with py2app (Python 3.11)
+
+on:
+  workflow_dispatch: {}
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    name: py2app build
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install build tools
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          pip install py2app==0.28
+          # PyQt6 wheels are required; pin a known-good version
+          pip install PyQt6==6.10.2 || true
+          # PyObjC meta-package to satisfy macOS integrations
+          pip install pyobjc || true
+          # Install any project requirements if provided
+          if [ -f requirements.txt ]; then pip install -r requirements.txt || true; fi
+
+      - name: Run py2app
+        run: |
+          # Build the app bundle using setup.py py2app
+          python setup.py py2app -q || exit 1
+
+      - name: Archive built app
+        run: |
+          if [ -d dist ]; then
+            timestamp=$(date -u +"%Y%m%dT%H%M%SZ")
+            zipname="widgetwall-macos-${timestamp}.zip"
+            zip -r "$zipname" dist
+            echo "Created $zipname"
+          else
+            echo "dist/ not found, build likely failed"; exit 1
+          fi
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: widgetwall-macos-app
+          path: widgetwall-macos-*.zip

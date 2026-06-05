@@ -1,0 +1,6 @@
+.venv
+.venv-py311-build
+__pycache__
+.pytest_cache
+*.log
+.DS_Store

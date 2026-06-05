@@ -1,0 +1,214 @@
+{
+  "version": "1.0.0",
+  "first_run": true,
+  "theme": "minimal_dark",
+  "language": "en",
+  "widgets": {
+    "todo_20260601200347": {
+      "type": "todo",
+      "name": "To-Do List",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "size": {
+        "width": 300,
+        "height": 200
+      },
+      "theme": "minimal_dark",
+      "settings": {
+        "always_on_top": false
+      }
+    },
+    "clock_20260601200515": {
+      "type": "clock",
+      "name": "Clock",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "size": {
+        "width": 300,
+        "height": 200
+      },
+      "theme": "minimal_dark",
+      "settings": {
+        "always_on_top": false
+      }
+    },
+    "calendar_20260601200521": {
+      "type": "calendar",
+      "name": "Calendar",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "size": {
+        "width": 300,
+        "height": 200
+      },
+      "theme": "minimal_dark",
+      "settings": {
+        "always_on_top": false
+      }
+    },
+    "pomodoro_20260601200543": {
+      "type": "pomodoro",
+      "name": "Pomodoro",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "size": {
+        "width": 300,
+        "height": 200
+      },
+      "theme": "minimal_dark",
+      "settings": {
+        "always_on_top": false
+      }
+    },
+    "notes_20260601200551": {
+      "type": "notes",
+      "name": "Notes",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "size": {
+        "width": 300,
+        "height": 200
+      },
+      "theme": "minimal_dark",
+      "settings": {
+        "always_on_top": false
+      }
+    },
+    "pinterest_20260601200556": {
+      "type": "pinterest",
+      "name": "Pinterest",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "size": {
+        "width": 300,
+        "height": 200
+      },
+      "theme": "minimal_dark",
+      "settings": {
+        "always_on_top": false
+      }
+    },
+    "clock_20260601203928": {
+      "type": "clock",
+      "name": "Clock",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "size": {
+        "width": 300,
+        "height": 200
+      },
+      "theme": "minimal_dark",
+      "settings": {
+        "always_on_top": false
+      }
+    },
+    "calendar_20260601203938": {
+      "type": "calendar",
+      "name": "Calendar",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "size": {
+        "width": 300,
+        "height": 200
+      },
+      "theme": "minimal_dark",
+      "settings": {
+        "always_on_top": false
+      }
+    },
+    "weather_20260601203942": {
+      "type": "weather",
+      "name": "Weather",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "size": {
+        "width": 300,
+        "height": 200
+      },
+      "theme": "minimal_dark",
+      "settings": {
+        "always_on_top": false
+      }
+    },
+    "notes_20260601203950": {
+      "type": "notes",
+      "name": "Notes",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "size": {
+        "width": 300,
+        "height": 200
+      },
+      "theme": "minimal_dark",
+      "settings": {
+        "always_on_top": false
+      }
+    },
+    "pomodoro_20260601204013": {
+      "type": "pomodoro",
+      "name": "Pomodoro",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "size": {
+        "width": 300,
+        "height": 200
+      },
+      "theme": "minimal_dark",
+      "settings": {
+        "always_on_top": false
+      }
+    },
+    "clock_20260601204025": {
+      "type": "clock",
+      "name": "Clock",
+      "position": {
+        "x": 100,
+        "y": 100
+      },
+      "size": {
+        "width": 300,
+        "height": 200
+      },
+      "theme": "minimal_dark",
+      "settings": {
+        "always_on_top": false
+      }
+    }
+  },
+  "global_settings": {
+    "click_through": false,
+    "always_on_top": true,
+    "show_menu_bar_icon": true,
+    "start_at_login": false,
+    "auto_update": false,
+    "notifications_enabled": true
+  },
+  "window_settings": {
+    "width": 1920,
+    "height": 1080,
+    "primary_monitor": 0
+  },
+  "last_updated": "2026-02-11T09:57:30.827553"
+}

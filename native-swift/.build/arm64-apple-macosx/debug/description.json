@@ -1,0 +1,239 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.WidgetWallSwift-arm64-apple-macosx26.0-debug.module" : {
+      "executable" : "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "fileList" : "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/sources",
+      "importPath" : "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/maanas/Project Files/widgetwall/native-swift/Sources/WidgetWallSwift/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "WidgetWallSwift",
+      "moduleOutputPath" : "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/Modules/WidgetWallSwift.swiftmodule",
+      "objects" : [
+        "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j10",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "WidgetWallSwift_main",
+        "-swift-version",
+        "5",
+        "-I",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-L",
+        "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+        "-plugin-path",
+        "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "native_swift"
+      ],
+      "outputFileMapPath" : "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/Modules/WidgetWallSwift.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/maanas/Project Files/widgetwall/native-swift/Sources/WidgetWallSwift/main.swift"
+      ],
+      "tempsPath" : "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "WidgetWallSwift" : [
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc",
+      "-module-name",
+      "WidgetWallSwift",
+      "-package-name",
+      "native_swift",
+      "-c",
+      "/Users/maanas/Project Files/widgetwall/native-swift/Sources/WidgetWallSwift/main.swift",
+      "-I",
+      "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j10",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "WidgetWallSwift_main",
+      "-swift-version",
+      "5",
+      "-I",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-L",
+      "/Library/Developer/CommandLineTools/Library/Developer/Frameworks",
+      "-plugin-path",
+      "/Library/Developer/CommandLineTools/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "native_swift",
+      "-driver-use-frontend-path",
+      "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "WidgetWallSwift" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift-entitlement.plist" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<entitlement-plist>"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<com.apple.security.get-task-allow>"
+        }
+      ],
+      "outputFilePath" : "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift-entitlement.plist"
+    },
+    "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/maanas/Project Files/widgetwall/native-swift/Sources/WidgetWallSwift/main.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/sources"
+    },
+    "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/WidgetWallSwift.product/Objects.LinkFileList"
+    },
+    "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Library/Developer/CommandLineTools/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/maanas/Project Files/widgetwall/native-swift/.build/arm64-apple-macosx/debug/swift-version--1AB21518FC5DEDBE.txt"
+    }
+  }
+}
