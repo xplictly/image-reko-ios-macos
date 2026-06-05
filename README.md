@@ -162,4 +162,12 @@ For issues and feature requests, please open an issue on GitHub.
 ---
 
 **Made with ❤️ for macOS users who want beautiful desktop widgets without subscription!**
+# 🖼️ Image Reko (iOS/macOS)
+
+---
+
+A **minimalist reverse image search app** for iOS and macOS, featuring a modern **glass-inspired UI** and seamless **cross-platform support**.  
+Discover the power of intuitive image searching wrapped in a sleek, elegant design.
+
+---
 
